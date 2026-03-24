@@ -70,3 +70,13 @@ Training dynamics are captured for each experiment. Below is a comparison of per
 **Optimizer Stability:** Adam and Nadam provided the most stable validation loss across all datasets, while SGD required significantly more tuning.
 
 **Data Scaling:** Standardization is mandatory. Without StandardScaler, the loss functions (especially MSE for regression) often failed to converge or resulted in exploding gradients.
+
+## 📂 Datasets
+
+Since the data files are excluded from this repository to keep it lightweight, please download them from the following sources and place them in the `data/` directory:
+
+| Dataset          | Source                                                                                         | Description                                   |
+| :--------------- | :--------------------------------------------------------------------------------------------- | :-------------------------------------------- |
+| **Hourly Wages** | [Kaggle / UCI](https://www.kaggle.com/datasets/mrcioleandrogonalves/hourly-wages)              | Regression: Predicting employee wages.        |
+| **Diabetes**     | [Kaggle / Pima Indians](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)  | Classification: Diagnostic data for diabetes. |
+| **Wine Quality** | [UCI Machine Learning Repository](https://www.kaggle.com/code/nimapourmoradi/red-wine-quality) | Regression: Red wine chemical properties.     |
